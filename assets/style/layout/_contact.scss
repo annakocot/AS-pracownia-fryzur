@@ -1,20 +1,29 @@
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: $color-primary;
   color: #fff;
-  // -webkit-clip-path: polygon(0 54%, 100% 15%, 100% 100%, 0 100%);
-  // clip-path: polygon(0 54%, 100% 15%, 100% 100%, 0 100%);
+
+  @include media-breakpoint-up(laptop) {
+    flex-direction: row;
+  }
 
   &__wrapper {
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(laptop) {
+    flex-direction: row;
     padding: 2rem 10rem;
   }
+
   &__heading {
     color: #fff;
   }
 
   table {
     margin: 2rem;
+    margin-left: 4rem;
     width: 30rem;
   }
 
@@ -22,12 +31,52 @@
     padding: .5rem;
   }
 
+  &__social {
+    padding: 3rem;
+    text-align: center;
+
+    @include media-breakpoint-up(laptop) {
+      text-align: left;
+     }
+  }
+
+  &__icon {
+    font-size: 2.8rem;
+    padding: 1rem;
+  }
+
   &__description {
+    font-size: 2rem;
     line-height: 1.5;
     padding: 2rem;
+    text-align: center;
+
+    @include media-breakpoint-up(laptop) {
+     text-align: left;
+    }
   }
 }
 
 .mapouter {
-  margin-top: 3rem;
+  position: relative;
+  text-align: right;
+  height: 35.5rem;
+  width: 34rem;
+  margin: 5rem auto;
+
+  @include media-breakpoint-up(laptop) {
+    width: 49.9rem;
+  }
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 35.5rem;
+  width: 34rem;
+  margin: 5rem auto;
+
+  @include media-breakpoint-up(laptop) {
+    width: 49.9rem;
+  }
 }

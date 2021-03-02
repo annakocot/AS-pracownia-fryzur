@@ -1,40 +1,120 @@
 .about {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
   position: relative;
-  margin-top: 8rem;
+
+  @include media-breakpoint-up(landscapeTablet) {
+    &::after {
+      content: 'O nas';
+      font-size: 8rem;
+      color: $color-primary;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 46rem;
+      left: -2rem;
+      z-index: -1;
+
+      @include media-breakpoint-up(laptop) {
+        top: 38rem;
+        left: 2rem;
+      }
+
+      @include media-breakpoint-up(desktop) {
+        left: 14rem;
+      }
+      @include media-breakpoint-up(hdDesktop) {
+        left: 19rem;
+      }
+      @include media-breakpoint-up(fhdDesktop) {
+        left: 47rem;
+      }
+    }
+  }
 
   &__heading {
-    position: absolute;
-    top: 20rem;
-    left: -14rem;
-    transform: rotate(90deg);
+    margin: 4rem auto;
+
+    @include media-breakpoint-up(landscapeTablet) {
+      display: none;
+    }
   }
 }
 
 .profile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  margin-left: 5rem;
+  margin: 0 auto;
+
+
+  @include media-breakpoint-up(portraitTablet) {
+    flex-direction: row;
+  }
+
+  &__wrapper {
+    z-index: 1;
+    position: relative;
+  }
 
   &__textbox {
     flex-direction: column;
-    margin-top: 20rem;
+    outline: .1rem #000 solid;
+    outline-offset: 2rem;
+    max-width: 30rem;
+
+    @include media-breakpoint-up(laptop) {
+      max-width: 40rem;
+    }
+
+    &::before {
+      content: '';
+      background: $color-before;
+      width: 25rem;
+      height: 25rem;
+      position: absolute;
+      top: 2rem;
+      left: -3rem;
+      z-index: -1;
+    }
   }
 
   &__heading {
     font-size: 4rem;
+    max-width: 36rem;
+    font-family: 'Dancing Script', sans-serif;
     margin-bottom: 2rem;
+
+    @include media-breakpoint-up (portraitTablet) {
+      max-width: 45rem;
+    }
   }
 
   &__description {
-    max-width: 40rem;
+    max-width: 33rem;
     line-height: 1.5;
+
+    @include media-breakpoint-up (portraitTablet) {
+      max-width: 40rem;
+    }
   }
 
   &__picture {
-    height: 40rem ;
-    margin-left: 3rem;
+    position: relative;
+
+    @include media-breakpoint-up(phablet) {
+      margin-left: 3rem;
+    }
+
+    &::after {
+      content: '';
+      background: $color-before;
+      width: 30rem;
+      height: 38rem;
+      position: absolute;
+      top: 3rem;
+      right: 2rem;
+      z-index: -1;
+    }
   }
 }

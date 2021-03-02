@@ -1,20 +1,37 @@
 .book {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
+  text-align: center;
 
-  &__button {
-    font-family: inherit;
-    font-size: 4rem;
-    color: #fff;
-    padding: 3rem;
-    background: $color-primary;
-    border: none;
-    border-radius: 1rem;
-    outline: none;
+  &__description {
+    color: $color-primary;
+    display: inline-block;
+    text-align: center;
+    font-size: 2.8rem;
+    outline: .1rem solid #000;
+    outline-offset: 2rem;
+    padding: 0 4rem;
 
-    &:hover {
-      transform: scale(1.1);
+    @include media-breakpoint-up(phablet) {
+      padding: 0 10rem;
+    }
+
+    @include media-breakpoint-up(landscapeTablet) {
+      padding: 0 18rem;
     }
   }
+
+  // &__button {
+  //   font-family: inherit;
+  //   font-size: 4rem;
+  //   color: #fff;
+  //   padding: 3rem;
+  //   background: $color-primary;
+  //   border: none;
+  //   border-radius: 1rem;
+  //   outline: none;
+
+  //   &:hover {
+  //     transform: scale(1.1);
+  //   }
+  //}
 }

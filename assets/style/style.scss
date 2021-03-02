@@ -1,10 +1,15 @@
 @import 'base/reset';
 
-@import 'abstracts/colors';
+@import 'utilities/breakpoints';
+@import 'utilities/colors';
+@import 'utilities/icons';
+@import 'utilities/js';
 @import 'base/base';
 
+@import 'layout/logo';
 @import 'layout/nav';
 @import 'layout/header';
+@import 'layout/cta';
 @import 'layout/about';
 @import 'layout/gallery';
 @import 'layout/prices';

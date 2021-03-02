@@ -1,37 +1,53 @@
 .nav {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
 
-  &__name {
-    font-family: 'Dancing Script', serif;
-    font-weight: 700;
-    font-size: 3rem;
-    padding: 3rem 0;
-  }
+  &__hamburger {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 
-  &__place {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    padding: 3.2rem 1rem;
-  }
-
-  &__logo {
-    width: 6rem;
-    padding: 2rem;
+    @include media-breakpoint-up(landscapePhone) {
+      display: none;
+    }
   }
 
   &__list {
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+
+    @include media-breakpoint-up(laptop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__icon {
+    opacity: 0;
+    visibility: none;
+
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &__list-item {
-    padding: 3.5rem 3rem;
+    padding: 2rem 3rem;
 
-  &:hover {
-    transform: scale(1.3);
+    &:hover {
+      transform: scale(1.3);
+    }
+
+    &:hover .nav__icon {
+      opacity: 1;
+      visibility: visible;
+    }
   }
-}
 }

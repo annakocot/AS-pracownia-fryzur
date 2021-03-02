@@ -1,0 +1,19 @@
+.cta {
+  background: $color-primary;
+  color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: 'Playfair display', serif;
+  font-weight: 600;
+
+  &__heading {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    max-width: 26rem;
+
+    @include media-breakpoint-up (portraitTablet) {
+      max-width: 50rem;
+    }
+  }
+}

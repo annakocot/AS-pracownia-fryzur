@@ -11,3 +11,16 @@
     color: $color-primary;
   }
 }
+
+.button {
+
+  &__back-icon {
+  position: absolute;
+  right: 10rem;
+  bottom: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #fff;
+  color: #000;
+}
+}

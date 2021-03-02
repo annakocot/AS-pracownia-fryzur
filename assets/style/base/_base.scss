@@ -1,12 +1,15 @@
 html {
   font-size: 62.5%;
+  overflow: hidden scroll;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   background-color: $light-background;
-  overflow: hidden scroll;
 }
 
 a {
