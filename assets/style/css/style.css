@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  background-color: #F2FCF2;
+  overflow: hidden scroll;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 8rem;
+  text-align: center;
+  color: #0F4C20;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__name {
+  font-family: 'Dancing Script', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 3rem 0;
+}
+
+.nav__place {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 3.2rem 1rem;
+}
+
+.nav__logo {
+  width: 6rem;
+  padding: 2rem;
+}
+
+.nav__list {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav__list-item {
+  padding: 3.5rem 3rem;
+}
+
+.nav__list-item:hover {
+  transform: scale(1.3);
+}
+
+.header {
+  background: url("../../images/header.jpg");
+  width: 100vw;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 8rem;
+}
+
+.about__heading {
+  position: absolute;
+  top: 20rem;
+  left: -14rem;
+  transform: rotate(90deg);
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.profile__textbox {
+  flex-direction: column;
+  margin-top: 20rem;
+}
+
+.profile__heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.profile__description {
+  max-width: 40rem;
+  line-height: 1.5;
+}
+
+.profile__picture {
+  height: 40rem;
+  margin-left: 3rem;
+}
+
+.gallery {
+  position: relative;
+  padding-top: 16rem;
+}
+
+.gallery__heading {
+  position: absolute;
+  top: 30rem;
+  left: -8rem;
+  transform: rotate(90deg);
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80rem;
+  margin-left: 32rem;
+}
+
+.gallery__photo {
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.prices__heading {
+  position: absolute;
+  top: 30rem;
+  left: -8rem;
+  transform: rotate(90deg);
+}
+
+.table {
+  border-radius: 1rem;
+  background: #fff;
+  width: 50%;
+  margin: 16rem auto 8rem auto;
+}
+
+.table tr:not(:last-child) {
+  border-bottom: 1px solid #beb6bd;
+}
+
+.table td {
+  padding: 2rem;
+}
+
+.table__price {
+  text-align: right;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.book__button {
+  font-family: inherit;
+  font-size: 4rem;
+  color: #fff;
+  padding: 3rem;
+  background: #0F4C20;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.book__button:hover {
+  transform: scale(1.1);
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  background: #0F4C20;
+  color: #fff;
+}
+
+.contact__wrapper {
+  padding: 2rem 10rem;
+}
+
+.contact__heading {
+  color: #fff;
+}
+
+.contact table {
+  margin: 2rem;
+  width: 30rem;
+}
+
+.contact td {
+  padding: .5rem;
+}
+
+.contact__description {
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+.mapouter {
+  margin-top: 3rem;
+}
+
+.main {
+  position: relative;
+}
+
+.main__description {
+  position: absolute;
+  right: 2rem;
+  top: -16rem;
+  font-size: 2.5rem;
+  max-width: 20rem;
+  text-align: right;
+  color: #0F4C20;
+}
+
+.footer {
+  background-color: #0F4C20;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

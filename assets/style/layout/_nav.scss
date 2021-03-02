@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+
+  &__name {
+    font-family: 'Dancing Script', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 3rem 0;
+  }
+
+  &__place {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    padding: 3.2rem 1rem;
+  }
+
+  &__logo {
+    width: 6rem;
+    padding: 2rem;
+  }
+
+  &__list {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__list-item {
+    padding: 3.5rem 3rem;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+}

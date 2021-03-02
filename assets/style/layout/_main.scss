@@ -1,0 +1,13 @@
+.main {
+  position: relative;
+
+  &__description {
+    position: absolute;
+    right: 2rem;
+    top: -16rem;
+    font-size: 2.5rem;
+    max-width: 20rem;
+    text-align: right;
+    color: $color-primary;
+  }
+}

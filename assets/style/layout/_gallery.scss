@@ -1,0 +1,27 @@
+.gallery {
+  position: relative;
+  padding-top: 16rem;
+
+  &__heading {
+    position: absolute;
+    top: 30rem;
+    left: -8rem;
+    transform: rotate(90deg);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 80rem;
+    margin-left: 32rem;
+  }
+
+  &__photo {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 20rem;
+    height: 20rem;
+  }
+}

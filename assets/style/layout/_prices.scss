@@ -1,0 +1,34 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &__heading {
+    position: absolute;
+    top: 30rem;
+    left: -8rem;
+    transform: rotate(90deg);
+  }
+}
+
+.table {
+  border-radius: 1rem;
+  background: #fff;
+  width: 50%;
+  margin: 16rem auto 8rem auto;
+
+  tr {
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-light;
+    }
+  }
+
+  td {
+    padding: 2rem;
+  }
+
+  &__price {
+    text-align: right;
+  }
+}

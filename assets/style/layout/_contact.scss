@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  background: $color-primary;
+  color: #fff;
+  // -webkit-clip-path: polygon(0 54%, 100% 15%, 100% 100%, 0 100%);
+  // clip-path: polygon(0 54%, 100% 15%, 100% 100%, 0 100%);
+
+  &__wrapper {
+    padding: 2rem 10rem;
+  }
+  &__heading {
+    color: #fff;
+  }
+
+  table {
+    margin: 2rem;
+    width: 30rem;
+  }
+
+  td {
+    padding: .5rem;
+  }
+
+  &__description {
+    line-height: 1.5;
+    padding: 2rem;
+  }
+}
+
+.mapouter {
+  margin-top: 3rem;
+}

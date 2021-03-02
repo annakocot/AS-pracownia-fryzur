@@ -1,0 +1,20 @@
+.book {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  &__button {
+    font-family: inherit;
+    font-size: 4rem;
+    color: #fff;
+    padding: 3rem;
+    background: $color-primary;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

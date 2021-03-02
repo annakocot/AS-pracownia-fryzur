@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 8rem;
+
+  &__heading {
+    position: absolute;
+    top: 20rem;
+    left: -14rem;
+    transform: rotate(90deg);
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 5rem;
+
+  &__textbox {
+    flex-direction: column;
+    margin-top: 20rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    max-width: 40rem;
+    line-height: 1.5;
+  }
+
+  &__picture {
+    height: 40rem ;
+    margin-left: 3rem;
+  }
+}
