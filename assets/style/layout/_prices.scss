@@ -46,7 +46,7 @@
     content: '';
     background: $color-before;
     width: 39rem;
-    height: 61rem;
+    height: 148rem;
     position: absolute;
     top: -1rem;
     left: -1rem;
@@ -54,10 +54,12 @@
 
     @include media-breakpoint-up(phablet) {
       width: 48rem;
+      height: 131rem;
     }
 
     @include media-breakpoint-up(portraitTablet) {
       width: 54rem;
+      height: 119rem;
     }
 
     @include media-breakpoint-up(landscapeTablet) {
@@ -81,5 +83,10 @@
 
   &__price {
     text-align: right;
+  }
+
+  &__description {
+    line-height: 1.8;
+    text-decoration: underline;
   }
 }

@@ -9,10 +9,11 @@
 
   &__hamburger {
     position: absolute;
+    font-size: 3rem;
     top: 2rem;
     left: 2rem;
 
-    @include media-breakpoint-up(landscapePhone) {
+    @include media-breakpoint-up(phablet) {
       display: none;
     }
   }
@@ -22,7 +23,7 @@
     flex-direction: column;
     padding: 2rem;
 
-    @include media-breakpoint-up(laptop) {
+    @include media-breakpoint-up(phablet) {
       display: flex;
       flex-direction: row;
     }

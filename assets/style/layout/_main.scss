@@ -15,11 +15,11 @@
 .button {
 
   &__back-icon {
-  position: absolute;
+  position: fixed;
   right: 10rem;
   bottom: 20rem;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: #fff;
   color: #000;
 }

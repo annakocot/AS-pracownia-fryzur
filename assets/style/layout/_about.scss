@@ -90,6 +90,11 @@
     }
   }
 
+  &__top-picture {
+    width: 25rem;
+    height: 25rem;
+  }
+
   &__description {
     max-width: 33rem;
     line-height: 1.5;
@@ -99,8 +104,12 @@
     }
   }
 
-  &__picture {
+  &__bottom-picture {
     position: relative;
+    background: url(./../../images/salon1.jpg);
+    background-size: contain;
+    width: 27.5rem;
+    height: 38rem;
 
     @include media-breakpoint-up(phablet) {
       margin-left: 3rem;
@@ -109,7 +118,7 @@
     &::after {
       content: '';
       background: $color-before;
-      width: 30rem;
+      width: 28rem;
       height: 38rem;
       position: absolute;
       top: 3rem;

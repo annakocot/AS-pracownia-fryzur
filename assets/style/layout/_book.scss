@@ -3,6 +3,7 @@
   text-align: center;
 
   &__description {
+    max-width: 25rem;
     color: $color-primary;
     display: inline-block;
     text-align: center;

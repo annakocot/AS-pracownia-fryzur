@@ -168,11 +168,12 @@ h1 {
 
 .nav__hamburger {
   position: absolute;
+  font-size: 3rem;
   top: 2rem;
   left: 2rem;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 600px) {
   .nav__hamburger {
     display: none;
   }
@@ -184,7 +185,7 @@ h1 {
   padding: 2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .nav__list {
     display: flex;
     flex-direction: row;
@@ -354,6 +355,11 @@ h1 {
   }
 }
 
+.profile__top-picture {
+  width: 25rem;
+  height: 25rem;
+}
+
 .profile__description {
   max-width: 33rem;
   line-height: 1.5;
@@ -365,20 +371,24 @@ h1 {
   }
 }
 
-.profile__picture {
+.profile__bottom-picture {
   position: relative;
+  background: url(./../../images/salon1.jpg);
+  background-size: contain;
+  width: 27.5rem;
+  height: 38rem;
 }
 
 @media (min-width: 600px) {
-  .profile__picture {
+  .profile__bottom-picture {
     margin-left: 3rem;
   }
 }
 
-.profile__picture::after {
+.profile__bottom-picture::after {
   content: '';
   background: #ede8ed;
-  width: 30rem;
+  width: 28rem;
   height: 38rem;
   position: absolute;
   top: 3rem;
@@ -386,12 +396,12 @@ h1 {
   z-index: -1;
 }
 
-.photos {
+.album {
   position: relative;
   padding-top: 16rem;
 }
 
-.photos::before {
+.album::before {
   content: '';
   background: url(./../../images/gallerybg.jpg);
   width: 100%;
@@ -404,18 +414,18 @@ h1 {
   z-index: -1;
 }
 
-.photos__heading {
+.album__heading {
   text-align: center;
   margin: 4rem;
 }
 
 @media (min-width: 1024px) {
-  .photos__heading {
+  .album__heading {
     display: none;
   }
 }
 
-.photos__wrapper {
+.album__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -425,13 +435,13 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .photos__wrapper {
+  .album__wrapper {
     max-width: 66rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .photos__wrapper::after {
+  .album__wrapper::after {
     content: 'Galeria';
     font-size: 8rem;
     color: #0F4C20;
@@ -444,26 +454,27 @@ h1 {
 }
 
 @media (min-width: 1024px) and (min-width: 1366px) {
-  .photos__wrapper::after {
+  .album__wrapper::after {
     right: 18rem;
   }
 }
 
 @media (min-width: 1024px) and (min-width: 1920px) {
-  .photos__wrapper::after {
+  .album__wrapper::after {
     right: 45rem;
   }
 }
 
-.photos__photo {
+.album__photo {
   padding: 1rem;
   border-radius: 1.5rem;
   width: 30rem;
   height: 30rem;
+  position: center;
 }
 
 @media (min-width: 1024px) {
-  .photos__photo {
+  .album__photo {
     width: 20rem;
     height: 20rem;
   }
@@ -524,7 +535,7 @@ h1 {
   content: '';
   background: #ede8ed;
   width: 39rem;
-  height: 61rem;
+  height: 148rem;
   position: absolute;
   top: -1rem;
   left: -1rem;
@@ -534,12 +545,14 @@ h1 {
 @media (min-width: 600px) {
   .table::before {
     width: 48rem;
+    height: 131rem;
   }
 }
 
 @media (min-width: 768px) {
   .table::before {
     width: 54rem;
+    height: 119rem;
   }
 }
 
@@ -567,12 +580,18 @@ h1 {
   text-align: right;
 }
 
+.table__description {
+  line-height: 1.8;
+  text-decoration: underline;
+}
+
 .book {
   margin: 5rem auto;
   text-align: center;
 }
 
 .book__description {
+  max-width: 25rem;
   color: #0F4C20;
   display: inline-block;
   text-align: center;
@@ -704,11 +723,11 @@ h1 {
 }
 
 .button__back-icon {
-  position: absolute;
+  position: fixed;
   right: 10rem;
   bottom: 20rem;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: #fff;
   color: #000;
 }
