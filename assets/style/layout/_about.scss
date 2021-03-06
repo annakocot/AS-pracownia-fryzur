@@ -4,39 +4,14 @@
   margin-top: 2rem;
   position: relative;
 
-  @include media-breakpoint-up(landscapeTablet) {
-    &::after {
-      content: 'O nas';
-      font-size: 8rem;
-      color: $color-primary;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 46rem;
-      left: -2rem;
-      z-index: -1;
-
-      @include media-breakpoint-up(laptop) {
-        top: 38rem;
-        left: 2rem;
-      }
-
-      @include media-breakpoint-up(desktop) {
-        left: 14rem;
-      }
-      @include media-breakpoint-up(hdDesktop) {
-        left: 19rem;
-      }
-      @include media-breakpoint-up(fhdDesktop) {
-        left: 47rem;
-      }
-    }
-  }
-
   &__heading {
     margin: 4rem auto;
 
     @include media-breakpoint-up(landscapeTablet) {
-      display: none;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 35rem;
+      left: -17rem;
     }
   }
 }

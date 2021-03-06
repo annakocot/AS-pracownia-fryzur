@@ -1,11 +1,13 @@
 .prices {
-  position: relative;
   margin: 12rem auto;
 
   &__heading {
     @include media-breakpoint-up(landscapeTablet) {
-     display: none;
-     }
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 15rem;
+      left: -5rem;
+    }
   }
 }
 
@@ -22,24 +24,11 @@
   }
 
   @include media-breakpoint-up(portraitTablet) {
-    width: 50rem;
+    width: 72rem;
   }
 
-  @include media-breakpoint-up(landscapeTablet) {
-    &::after {
-      content: 'Cennik';
-      font-size: 8rem;
-      color: $color-primary;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 43rem;
-      left: -20rem;
-      z-index: -1;
-    }
-  }
-
-  @include media-breakpoint-up(desktop) {
-    width: 60rem;
+  &__description {
+    line-height: 1.8;
   }
 
   &::before {
@@ -63,11 +52,13 @@
     }
 
     @include media-breakpoint-up(landscapeTablet) {
-      width: 54rem;
+      width: 75rem;
+      height: 113rem;
     }
 
     @include media-breakpoint-up(desktop) {
-      width: 64rem;
+      width: 76rem;
+      height: 116rem;
     }
   }
 
@@ -79,14 +70,14 @@
 
   td {
     padding: 2rem;
-  }
 
-  &__price {
-    text-align: right;
-  }
+    &:nth-child(1) {
+      padding-right: 1rem;
+    }
 
-  &__description {
-    line-height: 1.8;
-    text-decoration: underline;
+    &:nth-child(2) {
+      padding-left: 1rem;
+      text-align: right;
+    }
   }
 }
