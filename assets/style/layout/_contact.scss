@@ -3,6 +3,7 @@
   flex-direction: column;
   background: $color-primary;
   color: #fff;
+  margin-top: 4rem;
 
   @include media-breakpoint-up(laptop) {
     flex-direction: row;

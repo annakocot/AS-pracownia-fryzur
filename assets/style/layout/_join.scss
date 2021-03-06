@@ -1,0 +1,42 @@
+.join {
+
+  &__heading {
+    padding: 1rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 4rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__picture {
+    background: url(./../../images/salon3.jpg);
+    width: 30rem;
+    height: 40rem;
+    background-size: contain;
+    position: relative;
+
+    &::before {
+      content: '';
+      background: $color-before;
+      width: 30rem;
+      height: 40rem;
+      position: absolute;
+      top: 2rem;
+      right: -3rem;
+      z-index: -1;
+    }
+  }
+
+  &__textbox {
+    padding: 10rem 4rem;
+    max-width: 40rem;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+}

@@ -591,6 +591,7 @@ h1 {
   flex-direction: column;
   background: #0F4C20;
   color: #fff;
+  margin-top: 4rem;
 }
 
 @media (min-width: 1024px) {
@@ -708,6 +709,49 @@ h1 {
 .footer {
   background-color: #0F4C20;
   text-align: center;
-  color: #fff;
+  font-size: 1.5rem;
+  color: #beb6bd;
+  text-transform: uppercase;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.join__heading {
+  padding: 1rem;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 4rem;
+}
+
+.join__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.join__picture {
+  background: url(./../../images/salon3.jpg);
+  width: 30rem;
+  height: 40rem;
+  background-size: contain;
+  position: relative;
+}
+
+.join__picture::before {
+  content: '';
+  background: #ede8ed;
+  width: 30rem;
+  height: 40rem;
+  position: absolute;
+  top: 2rem;
+  right: -3rem;
+  z-index: -1;
+}
+
+.join__textbox {
+  padding: 10rem 4rem;
+  max-width: 40rem;
+}
+
+.join__description {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
