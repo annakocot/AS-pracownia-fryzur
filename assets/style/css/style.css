@@ -717,8 +717,6 @@ h1 {
 
 .join__heading {
   padding: 1rem;
-  font-family: 'Dancing Script', sans-serif;
-  font-size: 4rem;
 }
 
 .join__wrapper {
@@ -749,6 +747,11 @@ h1 {
 .join__textbox {
   padding: 10rem 4rem;
   max-width: 40rem;
+}
+
+.join__subheading {
+  font-size: 4rem;
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .join__description {

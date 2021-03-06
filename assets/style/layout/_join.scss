@@ -2,8 +2,6 @@
 
   &__heading {
     padding: 1rem;
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 4rem;
   }
 
   &__wrapper {
@@ -34,6 +32,11 @@
   &__textbox {
     padding: 10rem 4rem;
     max-width: 40rem;
+  }
+
+  &__subheading {
+    font-size: 4rem;
+    font-family: 'Dancing Script', sans-serif;
   }
 
   &__description {
