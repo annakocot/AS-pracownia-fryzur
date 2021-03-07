@@ -6,16 +6,25 @@
 
   &__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+
+    @include media-breakpoint-up(landscapeTablet){
+      flex-direction: row;
+    }
   }
 
   &__picture {
     background: url(./../../images/salon3.jpg);
     width: 30rem;
     height: 40rem;
-    background-size: contain;
+    background-size: cover;
     position: relative;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(laptop) {
+      margin: 0 2rem;
+    }
 
     &::before {
       content: '';
@@ -32,6 +41,11 @@
   &__textbox {
     padding: 10rem 4rem;
     max-width: 40rem;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(laptop) {
+      margin: 0;
+    }
   }
 
   &__subheading {
@@ -40,6 +54,7 @@
   }
 
   &__description {
+    padding: 1rem 0;
     line-height: 1.5;
   }
 }

@@ -172,7 +172,7 @@ h1 {
 
 .logo__picture {
   width: 36rem;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .nav {
@@ -192,7 +192,7 @@ h1 {
   left: 2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .nav__hamburger {
     display: none;
   }
@@ -204,7 +204,7 @@ h1 {
   padding: 2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .nav__list {
     display: flex;
     flex-direction: row;
@@ -234,7 +234,7 @@ h1 {
   visibility: visible;
 }
 
-.header {
+.hero {
   background: url("../../images/header2.jpg");
   width: 100%;
   height: 30rem;
@@ -242,7 +242,7 @@ h1 {
   background-size: cover;
 }
 
-.cta {
+.book-visit {
   background: #0F4C20;
   color: #fff;
   text-align: center;
@@ -251,7 +251,7 @@ h1 {
   font-weight: 600;
 }
 
-.cta__heading {
+.book-visit__heading {
   margin: 0 auto;
   text-align: center;
   padding: 1rem;
@@ -259,7 +259,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .cta__heading {
+  .book-visit__heading {
     max-width: 50rem;
   }
 }
@@ -381,8 +381,8 @@ h1 {
 }
 
 .album {
-  position: relative;
   padding-top: 16rem;
+  position: relative;
 }
 
 .album::before {
@@ -403,9 +403,18 @@ h1 {
   margin: 4rem;
 }
 
+@media (min-width: 840px) {
+  .album__heading {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 15rem;
+    left: 62rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .album__heading {
-    display: none;
+    left: 71rem;
   }
 }
 
@@ -421,31 +430,6 @@ h1 {
 @media (min-width: 768px) {
   .album__wrapper {
     max-width: 66rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .album__wrapper::after {
-    content: 'Galeria';
-    font-size: 8rem;
-    color: #0F4C20;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 26rem;
-    right: 1rem;
-    z-index: -1;
-  }
-}
-
-@media (min-width: 1024px) and (min-width: 1366px) {
-  .album__wrapper::after {
-    right: 18rem;
-  }
-}
-
-@media (min-width: 1024px) and (min-width: 1920px) {
-  .album__wrapper::after {
-    right: 45rem;
   }
 }
 
@@ -473,6 +457,12 @@ h1 {
     transform: rotate(-90deg);
     position: absolute;
     top: 15rem;
+    left: -8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prices__heading {
     left: -5rem;
   }
 }
@@ -494,7 +484,13 @@ h1 {
 
 @media (min-width: 768px) {
   .table {
-    width: 72rem;
+    width: 60rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .table {
+    width: 71rem;
   }
 }
 
@@ -505,7 +501,7 @@ h1 {
 .table::before {
   content: '';
   background: #ede8ed;
-  width: 39rem;
+  width: 36rem;
   height: 148rem;
   position: absolute;
   top: -1rem;
@@ -513,30 +509,29 @@ h1 {
   z-index: -1;
 }
 
+@media (min-width: 480px) {
+  .table::before {
+    width: 39rem;
+  }
+}
+
 @media (min-width: 600px) {
   .table::before {
     width: 48rem;
-    height: 131rem;
+    height: 121rem;
   }
 }
 
 @media (min-width: 768px) {
   .table::before {
-    width: 54rem;
+    width: 64rem;
     height: 119rem;
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 1024px) {
   .table::before {
     width: 75rem;
-    height: 113rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .table::before {
-    width: 76rem;
     height: 116rem;
   }
 }
@@ -659,7 +654,13 @@ h1 {
   text-align: right;
   height: 35.5rem;
   width: 34rem;
-  margin: 5rem auto;
+  margin: 0 auto;
+}
+
+@media (min-width: 840px) {
+  .mapouter {
+    margin: 5rem auto;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -698,19 +699,27 @@ h1 {
 
 .button__back-icon {
   position: fixed;
-  right: 10rem;
-  bottom: 20rem;
+  right: 3rem;
+  bottom: 5rem;
   padding: 1rem;
   border-radius: 0.5rem;
   background: #fff;
   color: #000;
 }
 
+@media (min-width: 840px) {
+  .button__back-icon {
+    right: 10rem;
+    bottom: 20rem;
+  }
+}
+
 .footer {
   background-color: #0F4C20;
   text-align: center;
+  padding: 2rem;
   font-size: 1.5rem;
-  color: #beb6bd;
+  color: #fff;
   text-transform: uppercase;
   font-family: 'Pathway Gothic One', sans-serif;
 }
@@ -721,16 +730,29 @@ h1 {
 
 .join__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 840px) {
+  .join__wrapper {
+    flex-direction: row;
+  }
 }
 
 .join__picture {
   background: url(./../../images/salon3.jpg);
   width: 30rem;
   height: 40rem;
-  background-size: contain;
+  background-size: cover;
   position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .join__picture {
+    margin: 0 2rem;
+  }
 }
 
 .join__picture::before {
@@ -747,6 +769,13 @@ h1 {
 .join__textbox {
   padding: 10rem 4rem;
   max-width: 40rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .join__textbox {
+    margin: 0;
+  }
 }
 
 .join__subheading {
@@ -755,6 +784,7 @@ h1 {
 }
 
 .join__description {
+  padding: 1rem 0;
   line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

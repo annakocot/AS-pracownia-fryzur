@@ -6,6 +6,10 @@
       transform: rotate(-90deg);
       position: absolute;
       top: 15rem;
+      left: -8rem;
+    }
+
+    @include media-breakpoint-up(laptop){
       left: -5rem;
     }
   }
@@ -24,7 +28,11 @@
   }
 
   @include media-breakpoint-up(portraitTablet) {
-    width: 72rem;
+    width: 60rem;
+  }
+
+  @include media-breakpoint-up(laptop) {
+    width: 71rem;
   }
 
   &__description {
@@ -34,31 +42,35 @@
   &::before {
     content: '';
     background: $color-before;
-    width: 39rem;
+    width: 36rem;
     height: 148rem;
     position: absolute;
     top: -1rem;
     left: -1rem;
     z-index: -1;
 
+    @include media-breakpoint-up(landscapePhone){
+      width: 39rem;
+    }
+
     @include media-breakpoint-up(phablet) {
       width: 48rem;
-      height: 131rem;
+      height: 121rem;
     }
 
     @include media-breakpoint-up(portraitTablet) {
-      width: 54rem;
+      width: 64rem;
       height: 119rem;
     }
 
-    @include media-breakpoint-up(landscapeTablet) {
+    @include media-breakpoint-up(laptop) {
       width: 75rem;
-      height: 113rem;
+      height: 116rem;
     }
 
     @include media-breakpoint-up(desktop) {
-      width: 76rem;
-      height: 116rem;
+
+
     }
   }
 

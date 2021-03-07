@@ -63,7 +63,11 @@
   text-align: right;
   height: 35.5rem;
   width: 34rem;
-  margin: 5rem auto;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(landscapeTablet){
+    margin: 5rem auto;
+  }
 
   @include media-breakpoint-up(laptop) {
     width: 49.9rem;

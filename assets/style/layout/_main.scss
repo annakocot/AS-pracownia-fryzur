@@ -15,12 +15,17 @@
 .button {
 
   &__back-icon {
-  position: fixed;
-  right: 10rem;
-  bottom: 20rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background: #fff;
-  color: #000;
-}
+    position: fixed;
+    right: 3rem;
+    bottom: 5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    color: #000;
+
+    @include media-breakpoint-up(landscapeTablet) {
+      right: 10rem;
+      bottom: 20rem;
+    }
+  }
 }

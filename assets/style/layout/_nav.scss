@@ -13,7 +13,7 @@
     top: 2rem;
     left: 2rem;
 
-    @include media-breakpoint-up(phablet) {
+    @include media-breakpoint-up(portraitTablet) {
       display: none;
     }
   }
@@ -23,7 +23,7 @@
     flex-direction: column;
     padding: 2rem;
 
-    @include media-breakpoint-up(phablet) {
+    @include media-breakpoint-up(portraitTablet) {
       display: flex;
       flex-direction: row;
     }

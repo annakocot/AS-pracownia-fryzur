@@ -1,6 +1,6 @@
 .album {
-  position: relative;
   padding-top: 16rem;
+  position: relative;
 
   &::before {
     content: '';
@@ -19,8 +19,15 @@
     text-align: center;
     margin: 4rem;
 
+    @include media-breakpoint-up(landscapeTablet) {
+      transform: rotate(90deg);
+      position: absolute;
+      top: 15rem;
+      left: 62rem;
+    }
+
     @include media-breakpoint-up(laptop) {
-      display: none;
+      left: 71rem;
     }
   }
 
@@ -37,27 +44,6 @@
       max-width: 66rem;
     }
 
-    @include media-breakpoint-up(laptop) {
-
-      &::after {
-        content: 'Galeria';
-        font-size: 8rem;
-        color: $color-primary;
-        transform: rotate(90deg);
-        position: absolute;
-        top: 26rem;
-        right: 1rem;
-        z-index: -1;
-
-        @include media-breakpoint-up(hdDesktop) {
-          right: 18rem;
-        }
-
-        @include media-breakpoint-up(fhdDesktop) {
-          right: 45rem;
-        }
-      }
-    }
   }
 
   &__photo {
