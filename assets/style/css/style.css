@@ -204,6 +204,10 @@ h1 {
   padding: 2rem;
 }
 
+.nav__list.show {
+  display: flex;
+}
+
 @media (min-width: 768px) {
   .nav__list {
     display: flex;

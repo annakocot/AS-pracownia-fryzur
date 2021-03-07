@@ -23,6 +23,10 @@
     flex-direction: column;
     padding: 2rem;
 
+    &.show {
+      display: flex;
+    }
+
     @include media-breakpoint-up(portraitTablet) {
       display: flex;
       flex-direction: row;
