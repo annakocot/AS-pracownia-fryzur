@@ -133,7 +133,7 @@ body {
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
-  background-color: #F2FCF2;
+  background-color: #fff;
 }
 
 a {
@@ -151,6 +151,45 @@ h1 {
   margin: 0 auto;
   max-width: 100rem;
   position: relative;
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveTop {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .heading {
@@ -212,6 +251,8 @@ h1 {
   .nav__list {
     display: flex;
     flex-direction: row;
+    animation: moveTop ease-in .8s;
+    transition: all .8s;
   }
 }
 
@@ -244,6 +285,8 @@ h1 {
   height: 30rem;
   background-position: center;
   background-size: cover;
+  animation: moveRight ease-out .8s;
+  transition: all .3s;
 }
 
 .book-visit {
@@ -311,6 +354,7 @@ h1 {
   outline: .1rem #000 solid;
   outline-offset: 2rem;
   max-width: 30rem;
+  animation: moveTop ease-in 1.5s;
 }
 
 @media (min-width: 1024px) {
@@ -387,6 +431,7 @@ h1 {
 .album {
   padding-top: 16rem;
   position: relative;
+  animation: moveLeft ease-in 1.5s;
 }
 
 .album::before {
@@ -428,7 +473,7 @@ h1 {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 32rem;
-  background: #EAFBEF;
+  background: #fff;
 }
 
 @media (min-width: 768px) {
@@ -454,6 +499,7 @@ h1 {
 
 .prices {
   margin: 12rem auto;
+  animation: moveTop ease-in 1.5s;
 }
 
 @media (min-width: 840px) {
@@ -560,6 +606,7 @@ h1 {
 .book {
   margin: 5rem auto;
   text-align: center;
+  animation: moveTop ease-in 1.5s;
 }
 
 .book__description {
@@ -774,6 +821,9 @@ h1 {
   padding: 10rem 4rem;
   max-width: 40rem;
   margin: 0 auto;
+  outline: .1rem #000 solid;
+  outline-offset: -2rem;
+  animation: moveLeft ease-in 1.5s;
 }
 
 @media (min-width: 1024px) {

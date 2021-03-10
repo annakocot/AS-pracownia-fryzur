@@ -42,6 +42,9 @@
     padding: 10rem 4rem;
     max-width: 40rem;
     margin: 0 auto;
+    outline: .1rem #000 solid;
+    outline-offset: -2rem;
+    animation: moveLeft ease-in 1.5s;
 
     @include media-breakpoint-up(laptop) {
       margin: 0;

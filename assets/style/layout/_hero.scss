@@ -4,4 +4,6 @@
   height: 30rem;
   background-position: center;
   background-size: cover;
+  animation: moveRight ease-out .8s;
+  transition: all .3s;
 }

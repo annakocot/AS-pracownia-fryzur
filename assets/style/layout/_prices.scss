@@ -1,5 +1,6 @@
 .prices {
   margin: 12rem auto;
+  animation: moveTop ease-in 1.5s;
 
   &__heading {
     @include media-breakpoint-up(landscapeTablet) {

@@ -1,6 +1,7 @@
 .album {
   padding-top: 16rem;
   position: relative;
+  animation: moveLeft ease-in 1.5s;
 
   &::before {
     content: '';
@@ -38,7 +39,7 @@
     margin: 0 auto;
     max-width: 32rem;
     //max-height: 99rem;
-    background: $color-background;
+    background: #fff;
 
     @include media-breakpoint-up(portraitTablet) {
       max-width: 66rem;

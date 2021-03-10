@@ -1,6 +1,7 @@
 .book {
   margin: 5rem auto;
   text-align: center;
+  animation: moveTop ease-in 1.5s;
 
   &__description {
     max-width: 25rem;

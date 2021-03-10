@@ -37,6 +37,7 @@
     outline: .1rem #000 solid;
     outline-offset: 2rem;
     max-width: 30rem;
+    animation: moveTop ease-in 1.5s;
 
     @include media-breakpoint-up(laptop) {
       max-width: 40rem;

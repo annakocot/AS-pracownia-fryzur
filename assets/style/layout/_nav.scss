@@ -30,6 +30,8 @@
     @include media-breakpoint-up(portraitTablet) {
       display: flex;
       flex-direction: row;
+      animation: moveTop ease-in .8s;
+      transition: all .8s;
     }
   }
 
